@@ -6,6 +6,7 @@ import GlobalStyles from 'util/style/GlobalStyles'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import { Box, Container } from 'components/Grid'
+import { OutboundLink } from 'components/Link'
 
 import config from '../../../config/meta'
 
@@ -20,7 +21,9 @@ const Layout = ({ children }) => (
           <Footer>
             Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <OutboundLink to="https://www.gatsbyjs.org" from="footer">
+              Gatsby
+            </OutboundLink>
           </Footer>
         </Box>
       </Container>
