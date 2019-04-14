@@ -38,9 +38,9 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "format": "prettier --write \"src/**/*.js\"",
-    "lint:scripts": "eslint './src/**/*.jsx' './src/**/*.js'",
-    "lint:styles": "stylelint './src/**/*.jsx' './src/**/*.js'",
+    "format": "prettier --write \"src/**/*.{jsx,js}\"",
+    "lint:scripts": "eslint './src/**/*.{jsx,js}'",
+    "lint:styles": "stylelint './src/**/*.{jsx,js}'",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
