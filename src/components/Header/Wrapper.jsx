@@ -1,4 +1,4 @@
-import styled, { themeGet } from 'util/style'
+import styled, { themeGet } from '@style'
 
 const Wrapper = styled.div`
   background: ${themeGet('colors.primary.800')};

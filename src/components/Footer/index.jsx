@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styled, { themeGet } from 'util/style'
+import styled, { themeGet } from '@style'
 
-import { Box } from 'components/Grid'
+import { Box } from '@components/Grid'
 
 const StyledFooter = styled(Box)`
   background: ${themeGet('colors.grey.200')};

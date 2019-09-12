@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Link } from 'components/Link'
-import { Box } from 'components/Grid'
+import { Link } from '@components/Link'
+import { Box } from '@components/Grid'
 
 import Wrapper from './Wrapper'
 import Title from './Title'

@@ -21,6 +21,13 @@
       "node": {
         "extensions": [".js", ".jsx"],
         "paths": ["./src"]
+      },
+      "alias": {
+        "map": [
+          ["@style", "./src/util/style"],
+          ["@components", "./src/components"]
+        ],
+        "extensions": [".js", ".jsx"]
       }
     }
   },

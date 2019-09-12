@@ -1,4 +1,4 @@
-import styled, { flexbox, propTypes } from 'util/style'
+import styled, { flexbox, propTypes } from '@style'
 
 import Box from './Box'
 
@@ -9,7 +9,7 @@ const Flex = styled(Box)`
 Flex.displayName = `Flex`
 
 Flex.defaultProps = {
-  display: 'flex',
+  display: `flex`,
 }
 
 Flex.propTypes = {

@@ -1,4 +1,4 @@
-import styled, { display, propTypes } from 'util/style'
+import styled, { display, propTypes } from '@style'
 
 const Br = styled.br`
   ${display}

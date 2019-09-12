@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Link } from 'components/Link'
-import Layout from 'components/Layout'
-import SEO from 'components/SEO'
+import { Link } from '@components/Link'
+import Layout from '@components/Layout'
+import SEO from '@components/SEO'
 
-import { Box } from 'components/Grid'
+import { Box } from '@components/Grid'
 
 const SecondPage = () => (
   <Layout>

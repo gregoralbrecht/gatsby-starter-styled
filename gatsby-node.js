@@ -13,7 +13,10 @@ const path = require('path')
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+      alias: {
+        '@style': path.resolve(__dirname, './src/util/style'),
+        '@components': path.resolve(__dirname, './src/components'),
+      },
     },
   })
 }

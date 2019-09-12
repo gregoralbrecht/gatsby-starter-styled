@@ -1,4 +1,4 @@
-import styled from 'util/style'
+import styled from '@style'
 
 const Title = styled.h1`
   margin: 0;

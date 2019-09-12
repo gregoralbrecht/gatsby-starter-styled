@@ -6,7 +6,7 @@ import styled, {
   background,
   position,
   propTypes,
-} from 'util/style'
+} from '@style'
 
 const Box = styled.div`
   ${space}
