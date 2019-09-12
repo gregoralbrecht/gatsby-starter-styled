@@ -1,8 +1,15 @@
+/* eslint-disable prefer-destructuring */
 /**
  * This is our custom theme where we define global styles.
  * It should serve as a guideline for styling, but not all styles *have* to be taken from here.
  */
-const breakpoints = ['40em', '52em', '64em']
+const breakpoints = ['576px', '768px', '992px', '1200px']
+
+//  Aliases
+breakpoints.sm = breakpoints[0]
+breakpoints.md = breakpoints[1]
+breakpoints.lg = breakpoints[2]
+breakpoints.xl = breakpoints[3]
 
 /**
  * Primary: Colors to use for actionable items, such as links, buttons etc.
