@@ -1,10 +1,9 @@
 import Typography from 'typography'
 
 const typography = new Typography({
-  title: 'Test',
+  title: 'Default',
   baseFontSize: '18px',
   baseLineHeight: 1.45,
-  /* Use the system font stack as fallback */
   headerFontFamily: [
     '-apple-system',
     'BlinkMacSystemFont',
