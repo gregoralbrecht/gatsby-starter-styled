@@ -37,8 +37,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "gatsby develop",
+    "start": "gatsby develop -o",
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.{jsx,js}\"",
     "lint:scripts": "eslint './src/**/*.{jsx,js}'",
     "lint:styles": "stylelint './src/**/*.{jsx,js}'",
