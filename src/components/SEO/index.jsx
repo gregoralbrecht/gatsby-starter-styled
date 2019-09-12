@@ -71,7 +71,9 @@ function SEO({ description, lang, meta, title }) {
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.array,
+  meta: PropTypes.arrayOf(
+    PropTypes.shape({ property: PropTypes.string, content: PropTypes.string })
+  ),
   title: PropTypes.string.isRequired,
 }
 

@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ThemeProvider, theme } from '@style'
-import GlobalStyles from '@style/GlobalStyles'
 
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import { Box } from '@components/Grid'
 import { OutboundLink } from '@components/Link'
+import GlobalStyles from '@style/GlobalStyles'
+import { ThemeProvider, theme } from '@style'
 
 import config from '../../../config/meta'
 
