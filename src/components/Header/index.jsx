@@ -2,18 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Link } from 'components/Link'
-import { Container } from 'components/Grid'
+import { Box } from 'components/Grid'
 
 import Wrapper from './Wrapper'
 import Title from './Title'
 
 const Header = ({ siteTitle }) => (
   <Wrapper as="header">
-    <Container maxWidth="700px">
+    <Box maxWidth="700px" m="0 auto">
       <Title>
         <Link to="/">{siteTitle}</Link>
       </Title>
-    </Container>
+    </Box>
   </Wrapper>
 )
 

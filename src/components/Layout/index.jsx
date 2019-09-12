@@ -5,7 +5,7 @@ import GlobalStyles from 'util/style/GlobalStyles'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import { Box, Container } from 'components/Grid'
+import { Box } from 'components/Grid'
 import { OutboundLink } from 'components/Link'
 
 import config from '../../../config/meta'
@@ -15,7 +15,7 @@ const Layout = ({ children }) => (
     <>
       <GlobalStyles />
       <Header siteTitle={config.siteTitle || config.siteTitleAlt} />
-      <Container maxWidth="700px" px={3}>
+      <Box maxWidth="700px" m="0 auto" px={3}>
         {children}
         <Box mt={3}>
           <Footer>
@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
             </OutboundLink>
           </Footer>
         </Box>
-      </Container>
+      </Box>
     </>
   </ThemeProvider>
 )
