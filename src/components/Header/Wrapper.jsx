@@ -1,9 +1,9 @@
-import styled, { themeGet, themePx } from 'util/style'
+import styled, { themeGet } from 'util/style'
 
 const Wrapper = styled.div`
   background: ${themeGet('colors.primary.800')};
-  padding: ${themePx('space.3')} ${themePx('space.3')};
-  margin-bottom: ${themePx('space.4')};
+  padding: ${themeGet('space.3')} ${themeGet('space.3')};
+  margin-bottom: ${themeGet('space.4')};
 `
 
 export default Wrapper

@@ -73,12 +73,33 @@ const colors = {
  * Space is used for margin and padding scales.
  * It's recommended to use powers of two to ensure alignment across the entire project
  */
-const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
+const space = [
+  '0',
+  '4px',
+  '8px',
+  '16px',
+  '32px',
+  '64px',
+  '128px',
+  '256px',
+  '512px',
+]
 
 /**
  * Typographic scale
  */
-const fontSizes = [12, 14, 16, 20, 24, 32, 48, 64, 96, 128]
+const fontSizes = [
+  '12px',
+  '14px',
+  '16px',
+  '20px',
+  '24px',
+  '32px',
+  '48px',
+  '64px',
+  '96px',
+  '128px',
+]
 
 const lineHeights = [1, 1.125, 1.25, 1.5]
 
@@ -99,7 +120,7 @@ const letterSpacings = {
 /**
  * Border-radius
  */
-const radii = [0, 2, 4, 8, 16]
+const radii = ['0', '2px', '4px', '8px', '16px']
 
 export const theme = {
   name: 'Default',
