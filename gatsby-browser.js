@@ -4,11 +4,11 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 const GoogleAnalytics = require('react-ga')
-const config = require('./config/meta')
+const website = require('./config/website')
 
 /**
  * Initialize Google Analytics
  */
 exports.onClientEntry = () => {
-  GoogleAnalytics.initialize(config.googleAnalyticsId)
+  GoogleAnalytics.initialize(website.googleAnalyticsId)
 }

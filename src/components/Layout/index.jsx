@@ -8,13 +8,11 @@ import { OutboundLink } from '@components/Link'
 import GlobalStyles from '@style/GlobalStyles'
 import { ThemeProvider, theme } from '@style'
 
-import config from '../../../config/meta'
-
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyles />
-      <Header siteTitle={config.siteTitle || config.siteTitleAlt} />
+      <Header siteTitle="Gatsby Starter Styled" />
       <Box maxWidth="700px" m="0 auto" px={3}>
         {children}
         <Box mt={3}>
