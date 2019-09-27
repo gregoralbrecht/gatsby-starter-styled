@@ -2,18 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Box } from '@components/Grid'
-import styled, { themeGet } from '@style'
 
-const StyledFooter = styled(Box)`
-  background: ${themeGet('colors.grey.200')};
-  padding: ${themeGet('space.3')};
-  margin-bottom: ${themeGet('space.3')};
-`
-
-const Footer = ({ children, ...props }) => (
-  <StyledFooter as="footer" {...props}>
+const Footer = ({ children }) => (
+  <Box as="footer" bg="grey.300" p={3} mb={3}>
     {children}
-  </StyledFooter>
+  </Box>
 )
 
 Footer.propTypes = {

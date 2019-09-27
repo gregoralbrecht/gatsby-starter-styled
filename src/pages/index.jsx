@@ -1,19 +1,25 @@
 import React from 'react'
 
 import { Link } from '@components/Link'
-import Layout from '@components/Layout'
+import { Layout } from '@components/Layout'
 import Image from '@components/Image'
-import SEO from '@components/SEO'
+import { SEO } from '@components/SEO'
+import { Text } from '@components/Text'
+import { Box, Br } from '@components/Grid'
 
 const IndexPage = () => (
   <Layout>
     <SEO />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <Text as="h2" mb={3}>
+      Hi people
+    </Text>
+    <Text mb={4}>
+      Welcome to your new Gatsby site. <Br />
+      Now go build something great.
+    </Text>
+    <Box maxWidth="300px" mb={4}>
       <Image />
-    </div>
+    </Box>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )

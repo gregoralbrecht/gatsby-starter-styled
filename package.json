@@ -2,7 +2,7 @@
   "name": "gatsby-starter-styled",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby and styled-system",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "author": "Gregor Albrecht <hello@gregoralbrecht.com>",
   "license": "MIT",
   "repository": {
