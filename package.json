@@ -4,6 +4,36 @@
   "description": "A simple starter to get up and developing quickly with Gatsby and styled-system",
   "version": "0.1.0",
   "author": "Gregor Albrecht <hello@gregoralbrecht.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregoralbrecht/gatsby-starter-styled"
+  },
+  "bugs": {
+    "url": "https://github.com/gregoralbrecht/gatsby-starter-styled/issues"
+  },
+  "keywords": [
+    "react",
+    "gatsby",
+    "styled-components",
+    "styled-system"
+  ],
+  "scripts": {
+    "start": "gatsby develop -o",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "format": "prettier --write \"src/**/*.{jsx,js}\"",
+    "lint:scripts": "eslint './src/**/*.{jsx,js}'",
+    "lint:styles": "stylelint './src/**/*.{jsx,js}'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && yarn lint:styles",
+      "pre-push": "yarn lint:scripts"
+    }
+  },
   "dependencies": {
     "@styled-system/prop-types": "^5.1.2",
     "@styled-system/theme-get": "^5.1.2",
@@ -31,20 +61,6 @@
     "styled-components": "^4.2.0",
     "styled-system": "^5.1.2",
     "typography": "^0.16.19"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "start": "gatsby develop -o",
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "format": "prettier --write \"src/**/*.{jsx,js}\"",
-    "lint:scripts": "eslint './src/**/*.{jsx,js}'",
-    "lint:styles": "stylelint './src/**/*.{jsx,js}'"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -76,18 +92,5 @@
     "stylelint-config-standard": "^18.3.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && yarn lint:styles",
-      "pre-push": "yarn lint:scripts"
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gregoralbrecht/gatsby-starter-styled"
-  },
-  "bugs": {
-    "url": "https://github.com/gregoralbrecht/gatsby-starter-styled/issues"
   }
 }
