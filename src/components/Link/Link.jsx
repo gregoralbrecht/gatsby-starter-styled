@@ -22,7 +22,7 @@ const Link = ({ to, from, children, className }) => (
 Link.propTypes = {
   to: PropTypes.string.isRequired,
   from: PropTypes.string,
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
   className: PropTypes.string,
 }
 

@@ -1,4 +1,11 @@
-import { Flex, Box } from '@rebass/grid'
-import Container from './Container'
+/**
+ * Basic components for spacing and layouting.
+ * This is basically a re-implementation of Reflexbox.
+ *
+ * See: https://rebassjs.org/reflexbox/
+ */
+import Box from './Box'
+import Flex from './Flex'
+import Br from './Br'
 
-export { Flex, Box, Container }
+export { Box, Flex, Br }

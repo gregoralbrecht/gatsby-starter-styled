@@ -1,20 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Link } from 'components/Link'
-import { Container } from 'components/Grid'
-
-import Wrapper from './Wrapper'
-import Title from './Title'
+import { Link } from '@components/Link'
+import { Box } from '@components/Grid'
+import { Text } from '@components/Text'
 
 const Header = ({ siteTitle }) => (
-  <Wrapper as="header">
-    <Container maxWidth="700px">
-      <Title>
-        <Link to="/">{siteTitle}</Link>
-      </Title>
-    </Container>
-  </Wrapper>
+  <Box as="header" bg="primary.800" px={3} py={3} mb={4}>
+    <Box maxWidth="700px" m="0 auto">
+      <Link to="/" css={{ textDecoration: 'none' }}>
+        <Text as="h1" color="white">
+          {siteTitle}
+        </Text>
+      </Link>
+    </Box>
+  </Box>
 )
 
 Header.propTypes = {

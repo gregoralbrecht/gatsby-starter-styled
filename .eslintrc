@@ -1,6 +1,25 @@
 {
-  "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["prettier"],
+  "extends": [
+    "airbnb",
+    "plugin:compat/recommended",
+    "plugin:import/warnings",
+    "plugin:import/errors",
+    "plugin:prettier/recommended",
+    "plugin:promise/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react",
+    "plugin:jest/recommended"
+  ],
+  "plugins": [
+    "compat",
+    "import",
+    "prettier",
+    "promise",
+    "react",
+    "react-hooks",
+    "jest"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2017,
@@ -16,37 +35,51 @@
   },
   "settings": {
     "import/core-modules": [],
-    "import/ignore": ["util/style/index.js"],
+    "import/ignore": ["util/style/index.js", "util/test/index.jsx"],
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx"],
         "paths": ["./src"]
+      },
+      "alias": {
+        "map": [
+          ["@style", "./src/util/style"],
+          ["@components", "./src/components"],
+          ["@test", "./src/util/test"]
+        ],
+        "extensions": [".js", ".jsx"]
       }
     }
   },
   "rules": {
-    "no-use-before-define": 0,
-    "import/no-extraneous-dependencies": 0,
-    "import/prefer-default-export": 0,
-    "react/no-danger": 0,
-    "react/forbid-prop-types": 0,
-    "react/display-name": 1,
-    "react/react-in-jsx-scope": 0,
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [".js", ".jsx"]
-      }
+    "no-use-before-define": "warn",
+    "react/no-danger": "warn",
+    "react/display-name": "error",
+    "react/destructuring-assignment": [
+      "error",
+      "always",
+      { "ignoreClassFields": true }
     ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "quotes": [
-      2,
+      "error",
       "single",
       {
         "avoidEscape": true,
         "allowTemplateLiterals": true
       }
     ],
-    "jsx-a11y/accessible-emoji": 0,
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.{test,stories}.{js,jsx}"],
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "jsx-a11y/accessible-emoji": "off",
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/anchor-is-valid": [
       "warn",

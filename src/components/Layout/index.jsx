@@ -1,21 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ThemeProvider, theme } from 'util/style'
-import GlobalStyles from 'util/style/GlobalStyles'
 
-import Header from 'components/Header'
-import Footer from 'components/Footer'
-import { Box, Container } from 'components/Grid'
-import { OutboundLink } from 'components/Link'
-
-import config from '../../../config/meta'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
+import { Box } from '@components/Grid'
+import { OutboundLink } from '@components/Link'
+import GlobalStyles from '@style/GlobalStyles'
+import { ThemeProvider, theme } from '@style'
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyles />
-      <Header siteTitle={config.siteTitle || config.siteTitleAlt} />
-      <Container maxWidth="700px" px={3}>
+      <Header siteTitle="Gatsby Starter Styled" />
+      <Box maxWidth="700px" m="0 auto" px={3}>
         {children}
         <Box mt={3}>
           <Footer>
@@ -26,7 +24,7 @@ const Layout = ({ children }) => (
             </OutboundLink>
           </Footer>
         </Box>
-      </Container>
+      </Box>
     </>
   </ThemeProvider>
 )
@@ -35,4 +33,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export { Layout }

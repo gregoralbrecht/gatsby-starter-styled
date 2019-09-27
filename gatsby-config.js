@@ -1,8 +1,20 @@
-const config = require('./config/meta')
+const website = require('./config/website')
+
+const pathPrefix = website.pathPrefix === `/` ? `` : website.pathPrefix
 
 module.exports = {
+  pathPrefix: website.pathPrefix,
   siteMetadata: {
-    siteUrl: config.siteUrl,
+    pathPrefix,
+    siteUrl: website.url + pathPrefix,
+    title: website.title,
+    titleTemplate: website.titleTemplate,
+    description: website.description,
+    image: website.image,
+    siteLanguage: website.siteLanguage,
+    headline: website.headline,
+    author: website.author,
+    twitter: website.twitter,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,21 +51,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: config.googleAnalyticsId,
+        trackingId: website.googleAnalyticsId,
         anonymize: true,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: `/?utm_source=a2hs`,
-        background_color: config.manifest.backgroundColor,
-        theme_color: config.manifest.themeColor,
+        name: website.title,
+        short_name: website.shortName,
+        description: website.description,
+        start_url: `${pathPrefix}/?utm_source=a2hs`,
+        background_color: website.backgroundColor,
+        theme_color: website.themeColor,
         display: `standalone`,
-        icon: `src/images/favicon.png`,
+        icon: website.favicon,
       },
     },
     `gatsby-plugin-offline`,

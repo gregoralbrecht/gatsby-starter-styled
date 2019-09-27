@@ -1,14 +1,19 @@
 import React from 'react'
 
-import { Link } from 'components/Link'
-import Layout from 'components/Layout'
-import SEO from 'components/SEO'
-
-import { Box } from 'components/Grid'
+import { Link } from '@components/Link'
+import { Layout } from '@components/Layout'
+import { SEO } from '@components/SEO'
+import { Box } from '@components/Grid'
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO
+      title="Page two"
+      pathname="/page-2"
+      description="This is page 2 of Gatsby Starter Styled"
+      isArticle
+      articleMeta={{ datePublished: '2018-09-12', dateModified: '2019-09-12' }}
+    />
     <Box mb={3}>
       <Link to="/">Go back to the homepage</Link>
     </Box>
