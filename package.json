@@ -55,7 +55,7 @@
     "prop-types": "^15.7.2",
     "react": "16.10.2",
     "react-dom": "16.10.2",
-    "react-ga": "^2.5.7",
+    "react-ga": "^2.7.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.0",
