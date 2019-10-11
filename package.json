@@ -44,7 +44,7 @@
     "gatsby-plugin-google-analytics": "^2.1.21",
     "gatsby-plugin-lodash": "^3.1.11",
     "gatsby-plugin-manifest": "^2.2.21",
-    "gatsby-plugin-offline": "^3.0.12",
+    "gatsby-plugin-offline": "^3.0.14",
     "gatsby-plugin-react-helmet": "^3.1.11",
     "gatsby-plugin-sharp": "^2.2.29",
     "gatsby-plugin-sitemap": "^2.2.17",
