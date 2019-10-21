@@ -624,14 +624,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-transform-spread@^7.0.0":
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-spread/-/plugin-transform-spread-7.2.2.tgz#3103a9abe22f742b6d406ecd3cd49b774919b406"
-  integrity sha512-KWfky/58vubwtS0hLqEnrWJjsMGaOeSBn90Ezn5Jeg9Z8KKHmELbP1yGylMlm5N6TPKeY9A2+UaSYLdxahg01w==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
-
-"@babel/plugin-transform-spread@^7.6.2":
+"@babel/plugin-transform-spread@^7.0.0", "@babel/plugin-transform-spread@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-spread/-/plugin-transform-spread-7.6.2.tgz#fc77cf798b24b10c46e1b51b1b88c2bf661bb8dd"
   integrity sha512-DpSvPFryKdK1x+EDJYCy28nmAaIMdxmhot62jAXF/o99iA33Zj2Lmcp3vDmz+MUh0LNYVPvfj5iC3feb3/+PFg==
@@ -2550,10 +2543,10 @@ babel-preset-fbjs@^3.1.2:
     "@babel/plugin-transform-template-literals" "^7.0.0"
     babel-plugin-syntax-trailing-function-commas "^7.0.0-beta.0"
 
-babel-preset-gatsby@^0.2.17, babel-preset-gatsby@^0.2.19:
-  version "0.2.19"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.19.tgz#bd3cb08e38ac07e12da10c5f9154a9594233ff2c"
-  integrity sha512-O7Q+H2IoRG3GSX/4N9ikkcGWKXjVy2iJGpjRdtKxRan4ognzDwe2TAUxGXzph0F8aD3RJrTBLE4hhmvOcN4LFg==
+babel-preset-gatsby@^0.2.19, babel-preset-gatsby@^0.2.20:
+  version "0.2.20"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.20.tgz#0ea93dab2a0d0e780e914e8d845021b670c53c17"
+  integrity sha512-vKDeNhszAjTiHpgIyzLOxf9NCY9Jbw7k2yi6m4i9b9uPySCU19b/oRifYA0bC5cRj76vfoicSjykFGuwjj0Tyw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.5.5"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
