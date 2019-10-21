@@ -6113,7 +6113,7 @@ gatsby-cli@^2.8.3:
     ink "^2.5.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.13, gatsby-core-utils@^1.0.15:
+gatsby-core-utils@^1.0.15:
   version "1.0.15"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.15.tgz#cca10e6e6bafbbfeb9fda70639a7af6c673f9d74"
   integrity sha512-Sn94r4EEKAjngJqw761wBYkbYhAjY61cheFXSdB84m+neohislRH6a4QjW/0Rc3M36C0n5f6D8x4ZsVLdeBrcg==
@@ -6191,10 +6191,10 @@ gatsby-plugin-manifest@^2.2.23:
     semver "^5.7.1"
     sharp "^0.23.1"
 
-gatsby-plugin-offline@^3.0.14:
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.14.tgz#56021724d0ffb5de3b70ed3de873c4d9dcd80e0e"
-  integrity sha512-eMCw2mD2mr77xck/6/0EV6wO5rcXPk+kkQyiw8lgqx4eJ5AFmUp1U6FEVibFjm8yqvDlA9ldhvtxFKQSaQPNAQ==
+gatsby-plugin-offline@^3.0.16:
+  version "3.0.16"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.16.tgz#5629fd36b42673ce9f703b289f96f43f60d3914f"
+  integrity sha512-OM8zdPet5vWy17jW8gcUWoOh/MdfXfT8zuPKgeiO32ESryoEQsQW7gZSKBSaXutyApS+ndLtNxygDwm7Ma1anA==
   dependencies:
     "@babel/runtime" "^7.6.3"
     cheerio "^1.0.0-rc.3"
