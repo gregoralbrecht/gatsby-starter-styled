@@ -35,7 +35,7 @@
     }
   },
   "dependencies": {
-    "@styled-system/prop-types": "^5.1.2",
+    "@styled-system/prop-types": "^5.1.4",
     "@styled-system/theme-get": "^5.1.2",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.18.1",
