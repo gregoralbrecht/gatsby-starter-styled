@@ -67,7 +67,7 @@
     "@testing-library/jest-dom": "^5.0.2",
     "@testing-library/react": "^9.4.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^25.1.0",
     "babel-preset-gatsby": "^0.2.26",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
