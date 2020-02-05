@@ -47,7 +47,7 @@
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sharp": "^2.4.2",
-    "gatsby-plugin-sitemap": "^2.2.26",
+    "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-plugin-styled-components": "^3.1.19",
     "gatsby-plugin-typography": "^2.3.22",
     "gatsby-source-filesystem": "^2.1.48",
