@@ -41,7 +41,7 @@
     "gatsby": "^2.18.22",
     "gatsby-image": "^2.2.40",
     "gatsby-plugin-catch-links": "^2.1.24",
-    "gatsby-plugin-google-analytics": "^2.1.31",
+    "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-lodash": "^3.1.19",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-offline": "^3.0.32",
