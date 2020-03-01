@@ -59,7 +59,7 @@
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.1",
-    "styled-system": "^5.1.4",
+    "styled-system": "^5.1.5",
     "typography": "^0.16.19"
   },
   "devDependencies": {
