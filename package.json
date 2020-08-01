@@ -68,7 +68,7 @@
     "@testing-library/react": "^10.4.3",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.1.0",
-    "babel-preset-gatsby": "^0.4.0",
+    "babel-preset-gatsby": "^0.5.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
